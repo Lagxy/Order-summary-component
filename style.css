@@ -17,7 +17,11 @@
 body {
     box-sizing: border-box;
     font-family: 'RedHatDisplay';
-    background-color: var(--Pale-blue);
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-color: var(--Very-pale-blue);
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -129,4 +133,10 @@ p {
 
 .btn a:hover {
     color: var(--Dark-blue);
+}
+
+@media screen and (min-width: 786px) {
+    body {
+        background-image: url('images/pattern-background-desktop.svg');
+    }
 }
