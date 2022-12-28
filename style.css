@@ -21,7 +21,7 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
-    background-color: var(--Very-pale-blue);
+    background-color: var(--Pale-blue);
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
