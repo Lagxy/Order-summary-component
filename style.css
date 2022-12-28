@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('RedHatDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500, 700, 900;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'RedHatDisplay';
+    background-color: var(--Pale-blue);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    color: var(--Desaturated-blue);
+    line-height: 1.5rem;
+}
+
+.card {
+    width: clamp(300px, 340px, 375px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 15px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.card > img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-bottom: 25px;
+}
+
+.text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 35px 20px;
+    margin-bottom: 1.8rem;
+}
+
+.text h1 {
+    color: var(--Dark-blue);
+    margin-bottom: 1rem;
+}
+
+.price {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2.5rem;
+}
+
+.price > img {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.price > img:hover {
+    transform: scale(1.15);
+}
+
+.price-info {
+    margin-right: 2rem;
+}
+
+.price-info > h4 {
+    color: var(--Dark-blue);
+}
+
+.price a {
+    font-weight: bold;
+    color: var(--Bright-blue);
+}
+
+.price a:hover {
+    text-decoration: none;
+    opacity: .75;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.btn > button {
+    width: 85%;
+    height: 48px;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+    border : none;
+    border-radius: .65rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.btn > button:hover {
+    opacity: .7;
+}
+
+.btn a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+.btn a:hover {
+    color: var(--Dark-blue);
+}
