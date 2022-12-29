@@ -17,9 +17,8 @@
 body {
     box-sizing: border-box;
     font-family: 'RedHatDisplay';
-    background-image: url('images/pattern-background-mobile.svg');
+    background-image: url('./images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
-    background-position: top;
     background-size: contain;
     background-color: var(--Pale-blue);
     min-width: 100vw;
@@ -87,7 +86,8 @@ p {
     margin-right: 2rem;
 }
 
-.price-info > h4 {
+.price-info > h2 {
+    font-size: 1rem;
     color: var(--Dark-blue);
 }
 
@@ -137,6 +137,6 @@ p {
 
 @media screen and (min-width: 786px) {
     body {
-        background-image: url('images/pattern-background-desktop.svg');
+        background-image: url('./images/pattern-background-desktop.svg');
     }
 }
